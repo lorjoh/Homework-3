@@ -82,7 +82,7 @@ function generatePassword() {
     } return getSymbol;
   } //console.log(getRandomSymbol());
 
-  if (passwordSize = lowerCaseSize + upperCaseSize + numberSize + symbolSize) {
+  if ((passwordSize = lowerCaseSize + upperCaseSize + numberSize + symbolSize) === true)  {
     getRandomLowerCase();
     getRandomUpperCase();
     getRandomNumber();
