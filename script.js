@@ -10,42 +10,46 @@ function generatePassword() {
 
   var passwordSize = parseInt(prompt("select between from 8 to 128"));
   if (passwordSize < 8 || passwordSize > 128 || isNaN(passwordSize) === true) {
+    alert("Please try again!"); 
     var passwordSize = parseInt(prompt("select between from 8 to 128"));
-    alert("Please try again!");
-    return location.reload(true);
-
+  if (passwordSize < 8 || passwordSize > 128 || isNaN(passwordSize) === true){   
+    return location.reload(true);}
   }
   else { passwordSize; }
 
   var lowerCaseSize = parseInt(prompt("how many lowercase letters? "));
   if (lowerCaseSize < 1 || (isNaN(lowerCaseSize) === true)) {
-    var lowerCaseSize = parseInt(prompt("how many lowercase letters? "));
     alert("pls try again ");
-    return location.reload(true);
+   var lowerCaseSize = parseInt(prompt("how many lowercase letters? "));
+    if (lowerCaseSize < 1 || (isNaN(lowerCaseSize) === true)){
+    return location.reload(true);}
   }
   else { lowerCaseSize; }
 
   var upperCaseSize = parseInt(prompt("how many uppercase letters? "));
   if (upperCaseSize < 1 || (isNaN(upperCaseSize) === true)) {
-    var upperCaseSize = parseInt(prompt("how many uppercase letters? "));
     alert("pls try again ");
-    return location.reload(true);
+    var upperCaseSize = parseInt(prompt("how many uppercase letters? "));
+    if (upperCaseSize < 1 || (isNaN(upperCaseSize) === true)) {
+    return location.reload(true);}
   }
   else { upperCaseSize; }
 
   var numberSize = parseInt(prompt("how many numbers? "));
   if (numberSize < 1 || (isNaN(numberSize) === true)) {
-    var numberSize = parseInt(prompt("how many numbers? "));
     alert("pls try again ");
-    return location.reload(true);
+    var numberSize = parseInt(prompt("how many numbers? "));
+    if (numberSize < 1 || (isNaN(numberSize) === true)) {
+    return location.reload(true);}
   }
   else { numberSize; }
 
   var symbolSize = parseInt(prompt("how many symbols? "));
   if (symbolSize < 1 || (isNaN(symbolSize) === true)) {
-    var symbolSize = parseInt(prompt("how many symbols? "));
     alert("pls try again ");
-    return location.reload(true);
+    var symbolSize = parseInt(prompt("how many symbols? "));
+    if (symbolSize < 1 || (isNaN(symbolSize) === true)) {
+    return location.reload(true);}
   }
   else { symbolSize; }
 
